@@ -6,9 +6,12 @@
 }
 
 body {
+    height: 100%;
+    position: relative;
     margin: 0;
     padding: 0;
     background-color: #d2d2d2;
+    min-height: 100vh;
 }
 
 header {
@@ -55,17 +58,20 @@ header .user_main a img {
 }
 
 main {
-    padding: 150px 10px 0 10px;
+    height: 100%;
+    padding: 150px 10px 20px 10px;
     width: 100%;
     display: flex;
     gap: 50px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 main .main__advantages,
 main .main__directions,
+main .main__baccalaureate,
 main .main__applicans {
     display: flex;
     flex-direction: column;
@@ -75,7 +81,8 @@ main .main__applicans {
 
 main .main__advantages .main__advantages-title,
 main .main__directions .main__directions-title,
-main .main__applicans .main__applicans_title {
+main .main__baccalaureate .main__baccalaureate_title,
+main .main__applicans .main__applicans-title {
     font-size: 30px;
     color: black;
     font-weight: 800;
@@ -83,7 +90,8 @@ main .main__applicans .main__applicans_title {
 
 main .main__advantages ul,
 main .main__directions ul,
-main .main__applicans ul {
+main .main__baccalaureate ul,
+main .main__applicans ul{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -95,6 +103,7 @@ main .main__applicans ul {
 
 main .main__advantages ul li,
 main .main__directions ul li,
+main .main__baccalaureate ul li,
 main .main__applicans ul li {
     background: #ffffff;
     background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 50%, rgba(140, 140, 140, 1) 100%);
@@ -104,13 +113,15 @@ main .main__applicans ul li {
 
 main .main__advantages ul li .title,
 main .main__directions ul li .title,
+main .main__baccalaureate ul li .title,
 main .main__applicans ul li .title {
     font-size: 24px;
     color: #333;
     font-weight: 800;
 }
 
-main .main__advantages ul li p {
+main .main__advantages ul li p,
+main .main__applicans ul li p {
     font-size: 18px;
     color: #666;
 }
@@ -126,13 +137,17 @@ main .main__directions ul li .title {
     color: #666;
 }
 
-main .main__applicans_baccalaureate span {
+main .main__baccalaureate span,
+main .main__applicans span {
     color: #666;
     font-size: 20px;
 }
 
 footer {
-    padding: 100px 20px 20px 20px;
+    background-color: #c9c9c9;
+    position: sticky;
+    bottom: 5px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
