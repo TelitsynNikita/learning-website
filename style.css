@@ -10,7 +10,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-    background-color: #d2d2d2;
+    background-color: #2a2a2a;
     min-height: 100vh;
 }
 
@@ -46,11 +46,11 @@ header .navigation__header nav ul {
 
 header .navigation__header nav ul a {
     font-size: 26px;
-    color: black;
+    color: #ffffff;
 }
 
 header .navigation__header nav ul a:hover {
-    color: #666;
+    color: #5f5f5f;
 }
 
 header .user_main a img {
@@ -95,7 +95,7 @@ main .main__special .main__special-title,
 main .main__about .main__about-title,
 main .main__user .main__user-title {
     font-size: 30px;
-    color: black;
+    color: #ffffff;
     font-weight: 800;
 }
 
@@ -124,8 +124,7 @@ main .main__magistracy ul li,
 main .main__postgraduate ul li,
 main .main__special ul li,
 main .main__about ul li {
-    background: #ffffff;
-    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 50%, rgba(140, 140, 140, 1) 100%);
+    background: #3d3d3d;
     border-radius: 10px;
     padding: 30px;
 }
@@ -139,7 +138,7 @@ main .main__postgraduate ul li .title,
 main .main__special ul li .title,
 main .main__about ul li .title {
     font-size: 24px;
-    color: #333;
+    color: #dcdcdc;
     font-weight: 800;
 }
 
@@ -166,7 +165,7 @@ main .main__magistracy span,
 main .main__postgraduate span,
 main .main__special span,
 main .main__about span {
-    color: #666;
+    color: #c2c2c2;
     font-size: 20px;
 }
 
@@ -197,9 +196,8 @@ main .main__user table tr td {
 }
 
 footer {
-    background-color: #c9c9c9;
+    background-color: #3d3d3d;
     position: sticky;
-    bottom: 5px;
     padding: 20px;
     display: flex;
     align-items: center;
