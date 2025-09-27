@@ -1,7 +1,48 @@
 const main = document.querySelector('main'),
-      headerNav = document.querySelector('header .navigation__header ul');
+      headerNav = document.querySelector('header .navigation__header ul'),
+      user = document.querySelector('header .user_main a');
 
 document.addEventListener('DOMContentLoaded', () => {
+    user.addEventListener('click', () => {
+        main.innerHTML = `
+        <section class="main__user">
+            <h2 class="main__user-title">О вас</h2>
+            <table>
+                <caption>Основная информация профиля</caption>
+                <thead>
+                <tr>
+                    <th>Параметр</th>
+                    <th>Значение</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Логин</td>
+                    <td>user_login</td>
+                </tr>
+                <tr>
+                    <td>ФИО</td>
+                    <td>Иванов Иван Иванович</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>user@example.com</td>
+                </tr>
+                <tr>
+                    <td>Телефон</td>
+                    <td>+7 (999) 123-45-67</td>
+                </tr>
+                <tr>
+                    <td>Дата регистрации</td>
+                    <td>27.09.2025</td>
+                </tr>
+                </tbody>
+            </table>
+        
+        </section>
+        `
+    })
+
     headerNav.addEventListener('click', (e) => {
         switch(e.target.className) {
             case 'applicants':

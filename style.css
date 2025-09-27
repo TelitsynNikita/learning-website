@@ -28,7 +28,8 @@ header {
     -webkit-backdrop-filter: blur(5px);
 }
 
-header .title__header a {
+header .title__header a,
+header .user_main a {
     cursor: pointer;
 }
 
@@ -76,7 +77,8 @@ main .main__applicans,
 main .main__magistracy,
 main .main__postgraduate,
 main .main__special,
-main .main__about {
+main .main__about,
+main .main__user {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,9 +90,10 @@ main .main__directions .main__directions-title,
 main .main__baccalaureate .main__baccalaureate_title,
 main .main__applicans .main__applicans-title,
 main .main__magistracy .main__magistracy-title,
-main .main__postgraduate .main__postgraduate-title
+main .main__postgraduate .main__postgraduate-title,
 main .main__special .main__special-title,
-main .main__about .main__about-title {
+main .main__about .main__about-title,
+main .main__user .main__user-title {
     font-size: 30px;
     color: black;
     font-weight: 800;
@@ -165,6 +168,32 @@ main .main__special span,
 main .main__about span {
     color: #666;
     font-size: 20px;
+}
+
+main .main__user table {
+    width: 100%;
+}
+
+main .main__user table caption {
+    font-size: 20px;
+    color: #666;
+    font-weight: 800;
+}
+
+main .main__user table tr th {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #666;
+    border-radius: 10px;
+}
+
+main .main__user table tr td {
+    padding: 10px;
+    color: #9a9a9a;
+    font-size: 16px;
+    background-color: #333333;
+    border-radius: 10px;
 }
 
 footer {
