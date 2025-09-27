@@ -72,7 +72,9 @@ main {
 main .main__advantages,
 main .main__directions,
 main .main__baccalaureate,
-main .main__applicans {
+main .main__applicans,
+main .main__magistracy,
+main .main__postgraduate {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +84,9 @@ main .main__applicans {
 main .main__advantages .main__advantages-title,
 main .main__directions .main__directions-title,
 main .main__baccalaureate .main__baccalaureate_title,
-main .main__applicans .main__applicans-title {
+main .main__applicans .main__applicans-title,
+main .main__magistracy .main__magistracy-title,
+main .main__postgraduate .main .main__postgraduate-title {
     font-size: 30px;
     color: black;
     font-weight: 800;
@@ -91,7 +95,9 @@ main .main__applicans .main__applicans-title {
 main .main__advantages ul,
 main .main__directions ul,
 main .main__baccalaureate ul,
-main .main__applicans ul{
+main .main__applicans ul,
+main .main__magistracy ul,
+main .main__postgraduate ul {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -104,7 +110,9 @@ main .main__applicans ul{
 main .main__advantages ul li,
 main .main__directions ul li,
 main .main__baccalaureate ul li,
-main .main__applicans ul li {
+main .main__applicans ul li,
+main .main__magistracy ul li,
+main .main__postgraduate ul li {
     background: #ffffff;
     background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 50%, rgba(140, 140, 140, 1) 100%);
     border-radius: 10px;
@@ -114,7 +122,9 @@ main .main__applicans ul li {
 main .main__advantages ul li .title,
 main .main__directions ul li .title,
 main .main__baccalaureate ul li .title,
-main .main__applicans ul li .title {
+main .main__applicans ul li .title,
+main .main__magistracy ul li .title,
+main .main__postgraduate ul li .title {
     font-size: 24px;
     color: #333;
     font-weight: 800;
@@ -138,7 +148,9 @@ main .main__directions ul li .title {
 }
 
 main .main__baccalaureate span,
-main .main__applicans span {
+main .main__applicans span,
+main .main__magistracy span,
+main .main__postgraduate span {
     color: #666;
     font-size: 20px;
 }
