@@ -65,7 +65,7 @@ main {
     gap: 50px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 100vh;
 }
 
@@ -74,7 +74,9 @@ main .main__directions,
 main .main__baccalaureate,
 main .main__applicans,
 main .main__magistracy,
-main .main__postgraduate {
+main .main__postgraduate,
+main .main__special,
+main .main__about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +88,9 @@ main .main__directions .main__directions-title,
 main .main__baccalaureate .main__baccalaureate_title,
 main .main__applicans .main__applicans-title,
 main .main__magistracy .main__magistracy-title,
-main .main__postgraduate .main .main__postgraduate-title {
+main .main__postgraduate .main__postgraduate-title
+main .main__special .main__special-title,
+main .main__about .main__about-title {
     font-size: 30px;
     color: black;
     font-weight: 800;
@@ -97,7 +101,9 @@ main .main__directions ul,
 main .main__baccalaureate ul,
 main .main__applicans ul,
 main .main__magistracy ul,
-main .main__postgraduate ul {
+main .main__postgraduate ul,
+main .main__special ul,
+main .main__about ul {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -112,7 +118,9 @@ main .main__directions ul li,
 main .main__baccalaureate ul li,
 main .main__applicans ul li,
 main .main__magistracy ul li,
-main .main__postgraduate ul li {
+main .main__postgraduate ul li,
+main .main__special ul li,
+main .main__about ul li {
     background: #ffffff;
     background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 50%, rgba(140, 140, 140, 1) 100%);
     border-radius: 10px;
@@ -124,7 +132,9 @@ main .main__directions ul li .title,
 main .main__baccalaureate ul li .title,
 main .main__applicans ul li .title,
 main .main__magistracy ul li .title,
-main .main__postgraduate ul li .title {
+main .main__postgraduate ul li .title,
+main .main__special ul li .title,
+main .main__about ul li .title {
     font-size: 24px;
     color: #333;
     font-weight: 800;
@@ -150,7 +160,9 @@ main .main__directions ul li .title {
 main .main__baccalaureate span,
 main .main__applicans span,
 main .main__magistracy span,
-main .main__postgraduate span {
+main .main__postgraduate span,
+main .main__special span,
+main .main__about span {
     color: #666;
     font-size: 20px;
 }
