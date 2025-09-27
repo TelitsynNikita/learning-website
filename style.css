@@ -2,20 +2,22 @@
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #d2d2d2;
 }
 
 header {
-    padding: 20px;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     z-index: 10;
     background: rgba(73, 73, 73, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -34,7 +36,7 @@ header .title__header a img {
 
 header .navigation__header nav ul {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
 }
 
@@ -44,10 +46,90 @@ header .navigation__header nav ul a {
 }
 
 header .navigation__header nav ul a:hover {
-    color: #adadad;
+    color: #666;
 }
 
 header .user_main a img {
     width: 40px;
     height: 40px;
+}
+
+main {
+    padding: 150px 10px 0 10px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main__advantages,
+main .main__directions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main__advantages .main__advantages-title,
+main .main__directions .main__directions-title {
+    font-size: 30px;
+    color: black;
+    font-weight: 800;
+}
+
+main .main__advantages ul,
+main .main__directions ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.6fr 0.6fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+main .main__advantages ul li,
+main .main__directions ul li {
+    background: #ffffff;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 50%, rgba(140, 140, 140, 1) 100%);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+main .main__advantages ul li .title,
+main .main__directions ul li .title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 800;
+}
+
+main .main__advantages ul li p {
+    font-size: 18px;
+    color: #666;
+}
+
+main .main__directions ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main__directions ul li .title {
+    font-size: 30px;
+    color: #666;
+}
+
+footer {
+    padding: 100px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
 }
